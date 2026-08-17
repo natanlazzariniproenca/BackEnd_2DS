@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UFC Legends | Obrigado pela visita</title>
+    <title>UFC Legends | Saber Mais</title>
     <style>
         :root {
             --bg-color: #0b0b0c;
@@ -13,14 +13,12 @@
             --text-muted: #9a9a9a;
             --accent-gold: #ffb700;
         }
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
         }
-
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
@@ -30,7 +28,6 @@
             align-items: center;
             min-height: 100vh;
         }
-
         .container {
             max-width: 450px;
             width: 100%;
@@ -41,7 +38,6 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
             border: 1px solid #25262b;
         }
-
         .header-icon {
             width: 80px;
             height: 80px;
@@ -53,13 +49,11 @@
             align-items: center;
             box-shadow: 0 0 20px rgba(210, 10, 10, 0.4);
         }
-
         .header-icon svg {
             width: 40px;
             height: 40px;
             fill: var(--text-color);
         }
-
         h3 {
             font-size: 24px;
             font-weight: 800;
@@ -68,15 +62,12 @@
             margin-bottom: 10px;
             color: var(--text-color);
         }
-
         p {
             color: var(--text-muted);
             font-size: 15px;
             line-height: 1.6;
             margin-bottom: 25px;
         }
-
-        /* Representação de imagem em Base64 (Octógono/Lutador) */
         .fighter-preview {
             width: 100%;
             height: 150px;
@@ -85,13 +76,11 @@
             background-size: cover;
             background-position: center;
             border: 1px solid #2d2f34;
-            /* Placeholder Base64 SVG simulando textura de octógono escuro */
             background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48cGF0aCBkPSJNMjAgMEw0MCAxMEw0MCAzMEwyMCA0MEwwIDMwTDAgMTBaIiBmaWxsPSIjMWMxZDIyIiBzdHJva2U9IiMyNTI2MmIiIHN0cm9rZS13aWR0aD0iMSIvPjwvc3ZnPg==");
             display: flex;
             align-items: center;
             justify-content: center;
         }
-
         .badge {
             background: rgba(0, 0, 0, 0.75);
             padding: 6px 12px;
@@ -106,7 +95,6 @@
             align-items: center;
             gap: 5px;
         }
-
         .btn-link {
             display: inline-flex;
             align-items: center;
@@ -124,13 +112,11 @@
             letter-spacing: 0.5px;
             transition: all 0.2s ease;
         }
-
         .btn-link:hover {
             background-color: #ff1212;
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(210, 10, 10, 0.3);
         }
-
         .btn-link svg {
             width: 18px;
             height: 18px;
@@ -139,33 +125,31 @@
     </style>
 </head>
 <body>
-
     <div class="container">
-        <!-- Ícone Moderno SVG (Luvas de MMA / Punho) -->
+        <!-- Ícone Atualizado (Informação / i) -->
         <div class="header-icon">
             <svg viewBox="0 0 24 24">
-                <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M8,9.5C8,8.67 8.67,8 9.5,8C10.33,8 11,8.67 11,9.5V13H8V9.5M13,9.5C13,8.67 13.67,8 14.5,8C15.33,8 16,8.67 16,9.5V13H13V9.5Z" />
+                <path d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
             </svg>
         </div>
 
-        <h3>Página Inicial</h3>
-        <p>Olá, você está em casa! Prepare-se para explorar o maior acervo sobre os campeões e lendas que fizeram história no octógono do UFC.</p>
+        <h3>Nossa Missão</h3>
         
-        <!-- Elemento visual usando Base64 inline para performance -->
+        <p>Somos dedicados a preservar o legado do MMA. Documentamos estatísticas, cinturões e as trajetórias épicas dos lutadores que moldaram o esporte mundial.</p>
+
         <div class="fighter-preview">
             <span class="badge">
-                🏆 Todas as Gerações
+                ⭐ Estatísticas Reais
             </span>
         </div>
 
-        <!-- Link estilizado como botão moderno -->
-        <a href="/sobre" class="btn-link">
-            <span>Ir para Sobre</span>
-            <svg viewBox="0 0 24 24">
+        <!-- Botão invertido para retornar à Home -->
+        <a href="/" class="btn-link">
+            <svg viewBox="0 0 24 24" style="transform: rotate(180deg);">
                 <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
             </svg>
+            <span>Voltar para Início</span>
         </a>
     </div>
-
 </body>
 </html>
