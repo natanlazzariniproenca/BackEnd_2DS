@@ -5,6 +5,7 @@ const porta = 8005
 //Carrega o caminho dos arquivos
 const home = path.join(__dirname, 'pages/index.html')
 const sobre = path.join(__dirname, 'pages/sobre.html')
+const error = path.join(__dirname, 'pages/error.html')
 
 const server= http.createServer((req, res) =>{
     //qual informação eu tenho?
@@ -23,7 +24,7 @@ const server= http.createServer((req, res) =>{
 } else {
 res.setHeader('Content-Type', 'text/html; charset=utf-8')
 res.statusCode = 404
-res.end('Página não encontrada! \nErro 404')
+return res.end(fs.readFileSync(error, 'utf-8'))
 }
 })
 
